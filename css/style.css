@@ -21,6 +21,10 @@
     background-color: #438a81;
 }
 
+.bg-color-work-history {
+    background-color: #ebf1f3;
+}
+
 /*--------------------------------------------Special Paddings/Margins/Text*/
 
 
@@ -150,6 +154,79 @@ header {
     letter-spacing: 2px;
 }
 
+/*--------------------------------------------Contact*/
+
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #e84610;
+    color: #fafafa;
+}
+
+
+/*--------------------------------------------Work History*/
+
+.history-heading {
+    color: #272551;
+    margin-bottom: 50px;
+}
+
+.timeline-item{
+    padding:4em 2em 0em 2em;
+    position: relative;
+    color: #272551;
+    border-left: 1px solid;
+}
+
+.timeline-item p{
+    padding: 0;
+    margin: 0
+}
+
+.timeline-item::before{
+    content: attr(dates);
+    position: absolute;
+    left:2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: .8em;
+    padding: 0;
+    margin: 0;
+}
+    
+.timeline-item::after{
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #fafafa;
+}
+    
+.history-items {
+    margin-bottom: 30px;
+}
+
+
 /*--------------------------------------------Footer*/
 footer {
     background-color: #272551;
@@ -200,6 +277,7 @@ footer .cv-pdf i:hover {
 #footer-details {
     margin: 20px;
 }
+
 
 
 /*--------------------------------------------Media Queries*/
